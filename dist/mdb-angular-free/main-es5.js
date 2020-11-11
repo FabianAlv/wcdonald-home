@@ -263,7 +263,7 @@
         },
         decls: 9,
         vars: 21,
-        consts: [[3, "id", "ngClass"], [1, "wow", "animated", "rollIn", 3, "src", "ngClass"], ["id", "product-text", "data-wow-delay", "0.3s", 1, "wow", "animated", "fadeIn"], [1, "h2-responsive", "font-weight-bold", 3, "ngClass"], [3, "ngClass"]],
+        consts: [[3, "id", "ngClass"], ["data-wow-delay", "0.6s", 1, "wow", "animated", "rollIn", 3, "src", "ngClass"], ["id", "product-text", "data-wow-delay", "0.9s", 1, "wow", "animated", "fadeIn"], [1, "h2-responsive", "font-weight-bold", 3, "ngClass"], [3, "ngClass"]],
         template: function ProductComponent_Template(rf, ctx) {
           if (rf & 1) {
             _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
