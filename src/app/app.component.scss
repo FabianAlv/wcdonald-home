@@ -1,0 +1,73 @@
+@import "../styles.scss";
+
+footer {
+  background-color: $secondary-color;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
+}
+
+header {
+  left: 20px;
+  position: fixed;
+  top: -10px;
+  z-index: 15;
+
+  img {
+    box-shadow: 0 1px 10px 0px black;
+    border-radius: 10px;
+  }
+}
+
+.banner {
+  align-items: center;
+  background-image: url(../assets/images/banner.jpg);
+  display: flex;
+  justify-content: center;
+}
+
+#socials {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 450px) {
+  header {
+    img {
+      width: 70px;
+    }
+  }
+
+  .banner {
+    height: 100px;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 1024px) {
+  header {
+    img {
+      width: 100px;
+    }
+  }
+
+  .banner {
+    height: 200px;
+  }
+}
+
+@media (min-width: 1025px) {
+  header {
+    img {
+      width: 100px;
+    }
+  }
+
+  .banner {
+    height: 250px;
+  }
+}

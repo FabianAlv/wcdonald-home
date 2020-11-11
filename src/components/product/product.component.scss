@@ -1,0 +1,83 @@
+@import "../../styles.scss";
+
+div {
+  display: flex;
+  padding: 30px;
+}
+
+img {
+  background-color: white;
+  border-radius: 50%;
+  height: auto;
+  padding: 15px;
+}
+
+.dark-background {
+  background-color: $primary-color;
+  box-shadow: 0 1px 10px 0px black;
+}
+
+.dark-color {
+  color: $primary-color;
+}
+
+.light-background {
+  background-color: $secondary-color;
+  box-shadow: 0 3px 10px -3px black;
+}
+
+.light-color {
+  color: $secondary-color;
+  text-shadow: 2px 2px 4px black;
+}
+
+#product-text {
+  flex-direction: column;
+}
+
+@media (max-width: 450px) {
+  div {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+  }
+
+  img {
+    width: 230px;
+  }
+
+  #product-text {
+    align-items: center;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 1024px) {
+  img {
+    width: 250px;
+  }
+
+  .invert {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  #product-text {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  img {
+    width: 400px;
+  }
+
+  .invert {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  #product-text {
+    justify-content: center;
+  }
+}

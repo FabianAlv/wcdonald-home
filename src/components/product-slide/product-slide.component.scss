@@ -1,0 +1,45 @@
+@import "../../styles.scss";
+
+a {
+  background-color: $secondary-color;
+  border-radius: 10px;
+}
+
+img {
+  min-width: 940px;
+}
+
+h2 {
+  color: $secondary-color;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px black;
+}
+
+@media (max-width: 450px) {
+  a {
+    display: none;
+  }
+
+  img {
+    left: -300px;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 780px) {
+  img {
+    left: -100px;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 1024px) {
+  a {
+    font-size: 70%;
+    padding: 0.65rem 1.74rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  a {
+    font-size: 80%;
+  }
+}

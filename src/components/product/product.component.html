@@ -1,0 +1,8 @@
+<div id={{product.id}} [ngClass]="{'dark-background': even, 'invert': !even}">
+  <img src={{product.src}} class="wow animated rollIn" [ngClass]="{'light-background': !even}" />
+  <div id="product-text" class="wow animated fadeIn" data-wow-delay="0.3s">
+    <h2 class="h2-responsive font-weight-bold" [ngClass]="{'light-color': even}">{{product.title}}</h2>
+    <p [ngClass]="{'light-color': even}">{{product.details}}</p>
+    <h2 class="h2-responsive font-weight-bold" [ngClass]="{'light-color': even}">₡ {{product.price}}.00</h2>
+  </div>
+</div>
