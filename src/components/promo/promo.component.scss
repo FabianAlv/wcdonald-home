@@ -1,7 +1,7 @@
 @import "../../styles.scss";
 
 h2 {
-  color: white;
+  color: $secondary-color;
   text-shadow: 2px 2px 4px black;
 }
 
@@ -13,12 +13,17 @@ h2 {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  height: 500px;
   justify-content: center;
 
-  div:last-child {
+  div:first-child {
     align-items: flex-end;
     display: flex;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   img {
@@ -51,6 +56,7 @@ p {
 
   #promo {
     background-position-x: center;
+    height: 500px;
 
     img {
       width: 200px;
@@ -67,6 +73,8 @@ p {
   }
 
   #promo {
+    height: 500px;
+
     img {
       width: 300px;
     }
@@ -83,6 +91,7 @@ p {
 
   #promo {
     background-position-y: bottom;
+    height: 600px;
 
     img {
       width: 400px;
